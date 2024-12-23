@@ -1,6 +1,7 @@
 @startuml
 start
 :Initialize a = 0, b = 1;
+note right: Time: O(n), Space: O(1)
 if (n <= 1) then (yes)
     :Return n;
     stop
