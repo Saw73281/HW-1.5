@@ -1,6 +1,7 @@
 @startuml
 start
 :Initialize dp[0] = 0, dp[1] = 1;
+note right: Time: O(n), Space: O(n)
 :Loop from 2 to n;
 :dp[i] = dp[i-1] + dp[i-2];
 :Return dp[n];
