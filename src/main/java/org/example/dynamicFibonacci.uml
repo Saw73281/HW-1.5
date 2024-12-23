@@ -1,0 +1,8 @@
+@startuml
+start
+:Initialize dp[0] = 0, dp[1] = 1;
+:Loop from 2 to n;
+:dp[i] = dp[i-1] + dp[i-2];
+:Return dp[n];
+stop
+@enduml
