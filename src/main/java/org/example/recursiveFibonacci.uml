@@ -1,0 +1,13 @@
+@startuml
+participant "Caller" as C
+participant "Fibonacci" as F
+
+C -> F: recursiveFibonacci(n)
+alt n <= 1
+    F --> C: Return n
+else
+    F -> F: recursiveFibonacci(n-1)
+    F -> F: recursiveFibonacci(n-2)
+    F --> C: Return sum
+end
+@enduml
