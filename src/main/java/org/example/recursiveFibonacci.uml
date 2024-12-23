@@ -7,7 +7,9 @@ alt n <= 1
     F --> C: Return n
 else
     F -> F: recursiveFibonacci(n-1)
+    note right: Time: O(2^n), Space: O(n)
     F -> F: recursiveFibonacci(n-2)
+    note right: Time: O(2^n), Space: O(n)
     F --> C: Return sum
 end
 @enduml
