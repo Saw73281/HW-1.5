@@ -1,0 +1,13 @@
+@startuml
+start
+:Initialize a = 0, b = 1;
+if (n <= 1) then (yes)
+    :Return n;
+    stop
+else (no)
+    :Loop from 2 to n;
+    :Update a = b, b = a + b;
+end if
+:Return b;
+stop
+@enduml
